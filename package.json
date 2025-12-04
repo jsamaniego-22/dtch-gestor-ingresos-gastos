@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "docker-compose up",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "docker-compose build",
+    "stop": "docker-compose down",
+    "clean": "docker-compose down -v",
+    "dynamo:seed": "cd backend && npm run seed",
+    "test": "docker-compose run backend npm test",
+    "logs": "docker-compose logs -f",
+    "deploy:backend": "cd backend && npm run deploy",
+    "deploy:frontend": "cd frontend && npm run deploy"
+  }
+}
